@@ -3,12 +3,16 @@
     x:Class="AlisaTirgul.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AlisaTirgul"
-    Title="AlisaTirgul">
+    xmlns:local="clr-namespace:AlisaTirgul.Views"
+    Title="AlisaTirgul"
+    >
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="cakes and candles"
+                  ContentTemplate="{DataTemplate local:Candles}"
+                  Route="Candles" />
+
+    <ShellContent Title="cakes and candles"
+              ContentTemplate="{DataTemplate local:Lists}"
+              Route="Lists" />
 
 </Shell>

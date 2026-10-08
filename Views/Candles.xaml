@@ -3,9 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AlisaTirgul.Views.Candles"
              Title="Candles">
+    
+    
     <Grid RowDefinitions="*,*">
-        <VerticalStackLayout Grid.Row="0">
-            
+
+        <VerticalStackLayout Grid.Row="0" Margin="100">
+            <Label Text="Welcoem" />
+            <Label x:Name="lblSentence" />
+            <FlexLayout
+                x:Name="PicturesLayout"
+                Direction="Row"
+                Wrap="Wrap"
+                JustifyContent="Start" >
+                <Image Source = "candle.png" WidthRequest = "50" Margin = "1" />
+            </FlexLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" Margin="100">
+            <Label Text="Your name: " />
+            <Entry x:Name="entryName" Placeholder="Enter your name" />
+            <HorizontalStackLayout>
+                <Label Text="your age: "/>
+                <Slider
+                    Minimum="0"
+                    Maximum="50"
+                    Value="0"
+                    WidthRequest="100"
+                    ValueChanged="OnSliderValueChanged" />
+
+                <Label x:Name="lblAge" WidthRequest="50"/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </Grid>
+    
 </ContentPage>
+    
