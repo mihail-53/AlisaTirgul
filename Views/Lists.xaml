@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AlisaTirgul.Views.NewPage1"
-             Title="NewPage1">
+             x:Class="AlisaTirgul.Views.Lists"
+             Title="Lists">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Here are our users!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button Text="click to view users" Clicked="SeeUsers"/>
+        <HorizontalStackLayout x:Name="UserPistures" >
+            
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Search for users by name: "/>
+            <Entry x:Name="searchName" Placeholder="enter user name"/>
+            <Button Text="search" Clicked="SearchUser"/>
+            <FlexLayout x:Name="SearchUsersPictures">
+                
+            </FlexLayout>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

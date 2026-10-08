@@ -5,13 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AlisaTirgul.Views"
     Title="AlisaTirgul"
+    FlowDirection="RightToLeft"
     >
 
     <ShellContent Title="cakes and candles"
                   ContentTemplate="{DataTemplate local:Candles}"
                   Route="Candles" />
 
-    <ShellContent Title="cakes and candles"
+    <ShellContent Title="user lists"
               ContentTemplate="{DataTemplate local:Lists}"
               Route="Lists" />
 
